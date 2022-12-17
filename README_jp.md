@@ -6,5 +6,11 @@
 ## 重要な情報
 制作発起者は日本人なため、英語が非常に苦手なのでGoogle翻訳を多用しますがよろしくお願いします。
 
+# installation
+coming soon....
 
+# how to use
+## Auth
+
+## Message
 

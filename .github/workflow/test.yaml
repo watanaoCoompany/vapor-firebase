@@ -1,16 +1,21 @@
-name: CI
+name: lint & test
 
 on:
   pull_request:
-    branches: [ main ]
+    branches:
+      - '**'
 
 jobs:
   lint:
-    runs-on: macOS-latest
+    runs-on: macos-12
+    steps:
+      - name: Lint
+      - uses: actions/checkout@v2
+        run: swiftlint
 
   test:
-    runs-on: macOS-latest
+    runs-on: macos-12
     steps:
-    - uses: actions/checkout@v2
-    - name: Test
-      run: swift test -v
+      - name: Test
+      - uses: actions/checkout@v2
+        run: swift test -v
